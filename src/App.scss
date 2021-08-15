@@ -1,0 +1,158 @@
+@import '~antd/dist/antd.css';
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  height: 100%;
+  background-color: rgb(249, 250, 255);
+
+  .login-form {
+    width: 500px;
+    margin: auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 4px;
+
+    input, button {
+      border-radius: 4px;
+    }
+
+    .login-form-button {
+      width: 100%;
+    }
+  }
+  .dashboard-card {
+    border-radius: 2px;
+    width: 100%;
+    box-shadow: -1px -2px 6px 0px darkgrey;
+    .ant-card-body {
+      .ant-card {
+        margin-right: 20px;
+        border-radius: 5px;
+        &:hover {
+          box-shadow: -1px -2px 6px 0px darkgrey;
+        }
+        .anticon {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.layout {
+  .header-title {
+    font-weight: bold;
+    font-size: 16px;
+    float: right;
+    color: #fff;
+  }
+}
+
+.ant-page-header-heading-extra {
+  float: right;
+}
+
+.ant-page-header {
+  padding-top: 65px;
+}
+
+.ant-pagination {
+  padding: 0 20px;
+}
+
+.user-card-view {
+  margin: 30px;
+  .user-card {
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
+    &:hover .card-hover {
+      display: block;
+    }
+    .card-hover {
+      position: absolute;
+      background-color: #513f3f70;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left: 0;
+      .status-action {
+        position: absolute;
+        bottom: 35%;
+        left: 38%;
+        display: flex;
+        vertical-align: center;
+      }
+      .item {
+        border-radius: 50%;
+        vertical-align: center;
+        padding: 15px 0;
+        height: 50px;
+        width: 50px;
+        color: #fff;
+        &:first-child {
+          margin-right: 10px;
+          background-color: #6f80d4;
+        }
+        &:last-child {
+          background-color: red;
+        }
+      }
+    }
+  }
+  .card-hover {
+    border-radius: 10px;
+    display: none;
+    transform-style: preserve-3d;
+    transition: transform 0.9s;
+  }
+}
+
+.text-secondary {
+  color: gray;
+}
+
+.login-header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+  .ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.ant-layout, .ant-layout-content {
+  height: 100vh;
+}
+
+.header-title {
+  .main-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+.ant-page-header {
+  padding-top: 20px;
+}
+
+.ant-btn {
+  border-radius: 4px;
+}
+
+.permission-group {
+  .ant-checkbox-wrapper {
+    display: flex;
+    margin-left: 0;
+    line-height: 2.5;
+  }
+}
+
+.ant-table-wrapper {
+  margin: 20px;
+}
