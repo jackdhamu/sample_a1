@@ -1,0 +1,208 @@
+.not-found-page {
+  padding-bottom: unset!important;
+  padding-left: unset!important;
+  padding-right: unset!important;
+  .content-page {
+    padding: 70px 135px 75px;
+    border-radius: unset;
+    .ant-card-body {
+      display: flex;
+      padding: unset;
+    }
+    .error-image img{
+      height: 600px;
+      width: 508px;
+    }
+    .error-content {
+      margin: auto;
+      .ant-card {
+        box-shadow: 0 12px 64px 30px rgba(0, 0, 0, 0.06);
+        text-align: center;
+      }
+      .ant-card-body {
+        width: 600px;
+        height: 401px;
+        padding: 20px 70px;
+        display: flex;
+        flex-direction: column;
+        h1.ant-typography {
+          color: red;
+          font-size: 187.2px;
+          font-weight: bold;
+          margin-bottom: unset;
+        }
+        span.ant-typography{
+          font-weight: 300 !important;
+          font-size: 48px !important;
+        }
+        span.ant-typography,p {
+          font-family: 'Lato';
+          font-weight: normal;
+          font-size: 24px;
+          margin-bottom: 10px;
+          button {
+            border-radius: 25px;
+            span,a span {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1500px) {
+    .content-page {
+      padding: 200px 250px 120px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .content-page {
+      padding: 120px 70px 30px;
+      .error-image img{
+        height: 500px;
+        width: 408px;
+      }
+      .error-content {
+        .ant-card-body {
+          width: 400px;
+          height: 400px;
+          padding: 15px 35px;
+          h1.ant-typography {
+            font-size: 140.2px;
+          }
+          span.ant-typography {
+            font-size: 36px !important;
+          }
+          span.ant-typography,p {
+            font-size: 20px;
+            button {
+              span,a span {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 990px) {
+    .content-page {
+      padding: 50px 50px;
+      .error-content {
+        .ant-card-body {
+          height: unset;
+          width: 600px;
+          padding: 40px 40px;
+          h1.ant-typography {
+            font-size: 140.2px;
+          }
+          span.ant-typography {
+            font-size: 36px !important;
+          }
+          span.ant-typography,p {
+            font-size: 20px;
+            margin-bottom: 10px;
+            button {
+              span,a span {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 650px) {
+    .content-page {
+      display: flex;
+      justify-content: center;
+      .error-content {
+        .ant-card-body {
+          height: unset;
+          width: unset;
+          padding: 40px 40px;
+          h1.ant-typography {
+            font-size: 90.2px;
+          }
+          span.ant-typography {
+            font-size: 28px !important;
+          }
+          span.ant-typography,p {
+            font-size: 14px;
+            button {
+              span,a span {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .content-page {
+      .error-content {
+        .ant-card-body {
+          span.ant-typography {
+            font-size: 24px !important;
+          }
+          span.ant-typography,p {
+            font-size: 12px;
+            button {
+               span,a span {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width : 374px) {
+    .content-page {
+      .error-content {
+        .ant-card-body {
+          span.ant-typography {
+            font-size: 20px !important;
+          }
+          span.ant-typography,p {
+            font-size: 10px;
+            display: contents;
+            button {
+              width: max-content;
+              margin: auto;
+              span,a span {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width : 382px) {
+    .content-page {
+      .error-content {
+        .ant-card-body {
+          padding: 15px;
+          h1.ant-typography {
+            font-size: 70.2px;
+          }
+          span.ant-typography {
+            font-size: 20px !important;
+          }
+          span.ant-typography,p {
+            font-size: 10px;
+            margin-bottom: unset;
+            button {
+              span,a span {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
