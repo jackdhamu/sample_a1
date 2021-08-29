@@ -40,7 +40,18 @@
     }
   }
 }
+.Navlink{
 
+  padding: 10px;
+  text-align: center;
+  color: rgb(247, 247, 247);
+}
+.Navlink:hover{
+  color: coral;
+}
+.Navlink:active{
+  color: coral;
+}
 .layout {
   .header-title {
     font-weight: bold;
@@ -49,7 +60,15 @@
     color: #fff;
   }
 }
-
+.ant-tabs-nav-scroll {
+  display: flex;
+  justify-content: center;
+}
+.card-container{
+justify-content: center;
+align-items: center;
+text-align: center;
+}
 .ant-page-header-heading-extra {
   float: right;
 }
