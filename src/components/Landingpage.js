@@ -8,6 +8,7 @@ import baner4 from '../images/b3.jpg';
 import s1 from '../images/s1.jpeg';
 
 import 'antd/dist/antd.css';
+import Footer from './Footer1';
 
 const { Meta } = Card;
 
@@ -111,12 +112,10 @@ function Landingpage(){
     </div>
 
 </div>
- 
-<br/><br/>
-<br/><br/>
 <br/><br/>
 
-      </div>
+ <Footer/>
+     </div>
     
   );
 }
