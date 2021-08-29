@@ -24,9 +24,29 @@ class NavHeader extends React.Component{
           <Space size="large">
             {/*Display current logged user name and email*/}
             <div className={'main-title'}>TicketEzy</div>
-            <NavLink to={'/login'}>
-              <Button type="primary" icon={<LogoutOutlined/>} danger onClick={this.logOut}/>
-            </NavLink>
+            
+            <div>
+              <NavLink to={'/login'}>
+                <Button type="primary" icon={<LogoutOutlined/>} danger onClick={this.logOut}/>
+              </NavLink>
+              <NavLink className="Navlink" to={'/landingpage'} className="Navlink">
+             HOME
+              </NavLink>
+              <NavLink to={'/landingpage'} className="Navlink">
+             MOVIES
+              </NavLink>
+              <NavLink to={'/landingpage'} className="Navlink">
+             THEATRES
+              </NavLink>
+              <NavLink to={'/landingpage'} className="Navlink">
+             EVENTS
+              </NavLink>
+              <NavLink to={'/landingpage'} className="Navlink">
+             ORDERS
+              </NavLink>
+
+            </div>
+            
           </Space>
         </div>
       </Header>
