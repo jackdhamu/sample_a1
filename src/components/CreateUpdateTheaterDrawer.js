@@ -141,48 +141,48 @@ class CreateUpdateTheaterDrawer extends React.Component {
               <Option value={'non_ac'}>Non - A/C</Option>
             </Select>
           </Form.Item>
-          <Form.Item
-            name="pan_number"
-            label="PAN Number"
-            rules={
-              [
-                {required: true, message: 'Please enter PAN number'},
-                { min: 10, message: 'PAN number should be 10 digits'},
-                { max: 10, message: 'PAN number should be 10 digits'},
-              ]
-            }
-            initialValue={theaterData.pan_number}
-          >
-            <Input placeholder="Please enter Theatre PAN number" />
-          </Form.Item>
-          <Form.Item
-            name="gst_number"
-            label="GST Number"
-            rules={
-              [
-                {required: true, message: 'Please enter GST number'},
-                { min: 15, message: 'GST number should be 15 digits'},
-                { max: 15, message: 'GST number should be 15 digits'},
-              ]
-            }
-            initialValue={theaterData.gst_number}
-          >
-            <Input placeholder="Please enter Theatre GST number" />
-          </Form.Item>
-          <Form.Item
-            name="aadhar_number"
-            label="Aadhar Number"
-            rules={
-              [
-                {required: true, message: 'Please enter Aadhar number'},
-                { min: 12, message: 'Aadhar number should be 12 digits'},
-                { max: 12, message: 'Aadhar number should be 12 digits'},
-              ]
-            }
-            initialValue={theaterData.aadhar_number}
-          >
-            <Input placeholder="Please enter Theatre Aadhar number" />
-          </Form.Item>
+          {/*<Form.Item*/}
+          {/*  name="pan_number"*/}
+          {/*  label="PAN Number"*/}
+          {/*  rules={*/}
+          {/*    [*/}
+          {/*      {required: true, message: 'Please enter PAN number'},*/}
+          {/*      { min: 10, message: 'PAN number should be 10 digits'},*/}
+          {/*      { max: 10, message: 'PAN number should be 10 digits'},*/}
+          {/*    ]*/}
+          {/*  }*/}
+          {/*  initialValue={theaterData.pan_number}*/}
+          {/*>*/}
+          {/*  <Input placeholder="Please enter Theatre PAN number" />*/}
+          {/*</Form.Item>*/}
+          {/*<Form.Item*/}
+          {/*  name="gst_number"*/}
+          {/*  label="GST Number"*/}
+          {/*  rules={*/}
+          {/*    [*/}
+          {/*      {required: true, message: 'Please enter GST number'},*/}
+          {/*      { min: 15, message: 'GST number should be 15 digits'},*/}
+          {/*      { max: 15, message: 'GST number should be 15 digits'},*/}
+          {/*    ]*/}
+          {/*  }*/}
+          {/*  initialValue={theaterData.gst_number}*/}
+          {/*>*/}
+          {/*  <Input placeholder="Please enter Theatre GST number" />*/}
+          {/*</Form.Item>*/}
+          {/*<Form.Item*/}
+          {/*  name="aadhar_number"*/}
+          {/*  label="Aadhar Number"*/}
+          {/*  rules={*/}
+          {/*    [*/}
+          {/*      {required: true, message: 'Please enter Aadhar number'},*/}
+          {/*      { min: 12, message: 'Aadhar number should be 12 digits'},*/}
+          {/*      { max: 12, message: 'Aadhar number should be 12 digits'},*/}
+          {/*    ]*/}
+          {/*  }*/}
+          {/*  initialValue={theaterData.aadhar_number}*/}
+          {/*>*/}
+          {/*  <Input placeholder="Please enter Theatre Aadhar number" />*/}
+          {/*</Form.Item>*/}
           {/*<Form.Item*/}
           {/*  name="avatar"*/}
           {/*  label="Profile Image Link"*/}
