@@ -3,10 +3,13 @@ import { Button, Space, Table, Popconfirm, Badge, Switch } from 'antd';
 import actions from 'redux/Theaters/actions';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import SetAccountDrawer from './SetAccountDrawer';
+//import Account from './Account';
 
 const tableWidth = '100%';
 
 class UserTable extends React.Component {
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -79,6 +82,22 @@ class UserTable extends React.Component {
           ),
         },
         {
+          title: 'Account',
+          key: '',
+          render: (rowDate) => (
+            <Space size="middle">
+              <Button 
+                type="primary"
+                onClick={() => this.setAccount(rowDate)}
+                disabled={rowDate.status !== 'active'}
+              >
+                Set Account
+              </Button>
+              
+           </Space>
+          ),
+        },
+        {
           title: 'Action',
           key: '',
           render: (data,rowDate) => (
@@ -116,6 +135,14 @@ class UserTable extends React.Component {
     });
   };
 
+  setAccount =values =>{
+  
+     this.props.dispatch({
+      type: actions.SET_ACCOUNT_DRAWER_VISIBLE,
+      payload: true,
+    });
+   
+  }
   deleteUser = key => {
     //Add delete action
     this.props.dispatch({
@@ -141,6 +168,7 @@ class UserTable extends React.Component {
   // };
 
   render() {
+  
     const { tableData, tableLoader, searchValue } = this.props;
     let searchedData = [];
     let filterData = tableData.filter(data => data.status !== 'removed');

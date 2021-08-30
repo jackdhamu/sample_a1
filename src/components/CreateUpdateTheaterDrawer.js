@@ -111,7 +111,7 @@ class CreateUpdateTheaterDrawer extends React.Component {
             label="Place"
             rules={[{required: true, message: 'Please enter place'}]}
             initialValue={theaterData.place}
-          >
+          > 
             <Input placeholder="Please enter theater place" />
           </Form.Item>
           <Form.Item

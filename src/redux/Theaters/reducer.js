@@ -8,6 +8,7 @@ const initialState = {
   theaterData: [],
   theaterDataLoader: false,
   theaterListLoader: false,
+  setAccountDrawerVisible:false,
   createTheaterDrawerVisible: false,
   searchValue: '',
 };
@@ -34,6 +35,7 @@ function Reducer(state = initialState, action) {
         ...state,
         theaterListLoader: true,
       };
+     
     case actions.GET_THEATERS_SUCCESS:
       return {
         ...state,
@@ -44,7 +46,7 @@ function Reducer(state = initialState, action) {
       return {
         ...state,
         theaterListLoader: false,
-      };
+      }; 
     case actions.SET_THEATER_DRAWER_VISIBLE:
       return {
         ...state,
@@ -92,6 +94,11 @@ function Reducer(state = initialState, action) {
         ...state,
         searchValue: action.payload || '',
       };
+      case actions.SET_ACCOUNT_DRAWER_VISIBLE:
+        return {
+          ...state,
+          setAccountDrawerVisible: action.payload,
+        };
     default:
       return state
   }

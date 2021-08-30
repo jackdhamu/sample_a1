@@ -1,14 +1,13 @@
 import React from 'react';
 import NavHeader from './NavHeader';
-import { Carousel,Tabs,Card,Col, Button } from 'antd';
+import { Carousel,Tabs,Card, Button } from 'antd';
 import baner1 from '../images/b1.jpg';
 import baner2 from '../images/f9.jpeg';
 import baner3 from '../images/b4.jpg';
 import baner4 from '../images/b3.jpg';
 import s1 from '../images/s1.jpeg';
-
 import 'antd/dist/antd.css';
-import Footer from './Footer1';
+import Footer from './ContactFooter';
 
 const { Meta } = Card;
 
@@ -34,16 +33,16 @@ function Landingpage(){
       <NavHeader/>
       <Carousel autoplay>
     <div>
-      <a href="#"><h3 style={contentStyle}><img width="100%" height="100%" style={{opacity:'0.8'}} src={baner1}/></h3></a>
+      <a href="#"><h3 style={contentStyle}><img width="100%" height="100%" style={{opacity:'0.8'}} src={baner1} alt=""/></h3></a>
     </div>
     <div>
-      <a href="#"><h3 style={contentStyle}><img width="100%" style={{opacity:'0.8'}} height="100%" src={baner2}/></h3></a>
+      <a href="#"><h3 style={contentStyle}><img width="100%" style={{opacity:'0.8'}} height="100%" src={baner2} alt=""/></h3></a>
     </div>
     <div>
-      <a href="#"><h3 style={contentStyle}><img width="100%" height="100%" style={{opacity:'0.8'}}  src={baner3}/></h3></a>
+      <a href="#"><h3 style={contentStyle}><img width="100%" height="100%" style={{opacity:'0.8'}}  src={baner3} alt=""/></h3></a>
     </div>
     <div>
-      <a href="#"><h3 style={contentStyle}><img width="100%" height="100%" style={{opacity:'0.8'}} src={baner4}/></h3></a>
+      <a href="#"><h3 style={contentStyle}><img width="100%" height="100%" style={{opacity:'0.8'}} src={baner4} alt=""/></h3></a>
     </div>
   </Carousel>
   <br/><br/>
@@ -54,7 +53,6 @@ function Landingpage(){
         <div className="col">
         <Tabs style={{textAlign:'center'}} onChange={callback} type="card">
     <TabPane tab="NOW SHOWING" key="1">
-
     <Card
     hoverable
     style={{ width: 200, }}
@@ -66,7 +64,6 @@ function Landingpage(){
     </TabPane>
     <TabPane tab="COMING SOON" key="2">
   <div className="row">
-     
   <div className="col">
       <Card
     hoverable
@@ -75,9 +72,7 @@ function Landingpage(){
   >
     <Meta title="Tokyo drift" description="www.instagram.com" /><br/>
     <Button type="primary">Book</Button>
-
-
-  </Card> 
+ </Card> 
       </div> <div className="col">
       <Card
     hoverable
@@ -86,7 +81,6 @@ function Landingpage(){
   >
     <Meta title="Tokyo drift" description="www.instagram.com" /><br/>
     <Button type="primary">Book</Button>
-
   </Card> 
       </div> <div className="col">
       <Card
@@ -100,22 +94,15 @@ function Landingpage(){
   </Card> 
       </div>
   </div>
-  
-  
-     </TabPane>
-    
+  </TabPane>
   </Tabs>
   <a href="#">View more ...</a>
-
-        </div>
-     
-    </div>
-
+ </div>
+ </div>
 </div>
 <br/><br/>
-
- <Footer/>
-     </div>
+<Footer/>
+</div>
     
   );
 }

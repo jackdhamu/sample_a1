@@ -2,7 +2,7 @@ import React from 'react';
 import { PageHeader, Card, Layout, Row } from 'antd';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { BankOutlined } from '@ant-design/icons';
+import { BankOutlined , AccountBookOutlined } from '@ant-design/icons';
 import NavHeader from 'components/NavHeader';
 
 const { Footer } = Layout;

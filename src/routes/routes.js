@@ -16,6 +16,7 @@ const routes = [
     component: lazy(() => import('components/Theaters')),
     exact: true,
   },
+  
   {
     path: 'landingpage',
     component: lazy(() => import('components/Landingpage')),

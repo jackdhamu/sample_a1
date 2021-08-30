@@ -5,6 +5,7 @@ import TheaterTable from 'components/TheaterTable';
 import CreateUpdateTheaterDrawer from 'components/CreateUpdateTheaterDrawer';
 import { connect } from 'react-redux';
 import NavHeader from 'components/NavHeader';
+import SetAccountDrawer from './SetAccountDrawer';
 
 const { Search } = Input;
 
@@ -52,6 +53,7 @@ class Theaters extends React.Component {
         theaterData,
         theaterDataLoader,
         searchValue,
+        setAccountDrawerVisible,
       } = this.props;
       return (
         <>
@@ -81,6 +83,9 @@ class Theaters extends React.Component {
             submitLoader={theaterDataLoader}
             theaterData={theaterData}
           />
+          <SetAccountDrawer
+          setAccountDrawerVisible={setAccountDrawerVisible}
+          />
         </>
       );
     }
@@ -94,6 +99,7 @@ const mapStateToProps = state => {
     theaterData,
     theaterDataLoader,
     searchValue,
+    setAccountDrawerVisible,
   } = state.theaterReducer;
   return {
     theaterList,
@@ -102,6 +108,7 @@ const mapStateToProps = state => {
     theaterData,
     theaterDataLoader,
     searchValue,
+    setAccountDrawerVisible,
   };
 };
 
