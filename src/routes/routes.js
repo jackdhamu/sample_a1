@@ -22,6 +22,41 @@ const routes = [
     component: lazy(() => import('components/Landingpage')),
     exact: true,
   },
+  {
+    path: 'contact',
+    component: lazy(() => import('components/Contact')),
+    exact: true,
+  },
+  {
+    path: 'faq',
+    component: lazy(() => import('components/Faq')),
+    exact: true,
+  },
+  {
+    path: 'feedback',
+    component: lazy(() => import('components/Feedback')),
+    exact: true,
+  },
+  {
+    path: 'events',
+    component: lazy(() => import('components/Events')),
+    exact: true,
+  },
+  {
+    path: 'movies',
+    component: lazy(() => import('components/Movies')),
+    exact: true,
+  },
+  {
+    path: 'login',
+    component: lazy(() => import('components/LoginPage')),
+    exact: true,
+  },
+  {
+    path: 'offers',
+    component: lazy(() => import('components/Offers')),
+    exact: true,
+  },
 ];
 
 export default routes;
