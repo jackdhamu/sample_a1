@@ -57,6 +57,21 @@ const routes = [
     component: lazy(() => import('components/Offers')),
     exact: true,
   },
+  {
+    path: 'signup',
+    component: lazy(() => import('components/SignUp')),
+    exact: true,
+  },
+  {
+    path: 'userlogin',
+    component: lazy(() => import('components/UserLogin')),
+    exact: true,
+  },
+  {
+    path: 'forgetpassword',
+    component: lazy(() => import('components/ForgetPassword')),
+    exact: true,
+  },
 ];
 
 export default routes;

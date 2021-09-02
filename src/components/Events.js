@@ -11,7 +11,6 @@ class Event extends React.Component{
                 <NavHeader/>
                 <Content className="site-layout" style={{ padding: '0 50px', marginTop: 60}}>
                 <h2 style={{textAlign:'center', textDecoration:'underline',textDecorationColor:'coral',textDecorationThickness:'2.5px',}}>EVENTS</h2>
-
                 </Content>
                 <Footer/>
             </div>

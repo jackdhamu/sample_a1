@@ -22,6 +22,12 @@ class UserTable extends React.Component {
         //   render: (avatar) => <Avatar size={80} src={avatar} alt={'profile-image'}/>,
         // },
         {
+          title: 'Theatre ID',
+          dataIndex: 'support_id',
+          width: '10%',
+          render: value => <b>{value}</b>,
+        },
+        {
           title: 'Name',
           dataIndex: 'name',
           width: '40%',

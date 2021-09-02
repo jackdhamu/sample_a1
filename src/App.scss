@@ -72,7 +72,15 @@ text-align: center;
 .ant-page-header-heading-extra {
   float: right;
 }
-
+.icon-customer {
+  //filter: #808080; /* IE5+ */
+  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: all .8s ease-in-out;
+}
+.icon-customer:hover{
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.01);}
 .ant-page-header {
   padding-top: 65px;
 }

@@ -3,18 +3,16 @@ import React from 'react';
 import Footer from './ContactFooter';
 import NavHeader from './NavHeader';
 
-class Faq extends React.Component{
+class Faq extends React.Component {
 
-
-    render(){
-        return(
+    render() {
+        return (
             <div>
-                <NavHeader/>
-                <Content className="site-layout" style={{ padding: '0 50px', marginTop: 60}}>
-                <h2 style={{textAlign:'center', textDecoration:'underline',textDecorationColor:'coral',textDecorationThickness:'2.5px',}}>FAQ</h2>
+                <NavHeader />
+                <Content className="site-layout" style={{ padding: '0 50px', marginTop: 60 }}>
+                    <h2 style={{ textAlign: 'center', textDecoration: 'underline', textDecorationColor: 'coral', textDecorationThickness: '2.5px', }}>FAQ</h2>
                 </Content>
-                <Footer/>
-
+                <Footer />
             </div>
         );
     }
