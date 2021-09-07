@@ -5,7 +5,7 @@ import { Form, Input, Button, Checkbox, Layout } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import NavHeader from 'components/NavHeader';
 
-const { Header, Footer } = Layout;
+const { Footer } = Layout;
 
 class LoginPage extends React.Component {
 

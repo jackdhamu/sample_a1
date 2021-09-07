@@ -1,4 +1,4 @@
-import actions from 'redux/Authenticate/actions';
+import actions from 'redux/UserLogin/actions';
 import { setLocalData } from 'Config/helpers';
 import { message } from 'antd';
 

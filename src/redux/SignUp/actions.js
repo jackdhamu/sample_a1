@@ -1,0 +1,8 @@
+const actions = {
+    REGISTER_USER: 'REGISTER_THEATER',
+    REGISTER_USER_SUCCESS: 'REGISTER_USER_SUCCESS',
+    REGISTER_USER_FAILURE: 'REGISTER_USER_FAILURE',
+   };
+   
+  export default actions;
+  
