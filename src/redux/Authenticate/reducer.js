@@ -3,7 +3,7 @@ import { setLocalData } from 'Config/helpers';
 import { message } from 'antd';
 
 const initialState = {
-  isAuthenticated: true,
+  isAuthenticated: false,
   loader: false,
   cookies: undefined,
 };
