@@ -2,7 +2,6 @@ import React from 'react';
 import NavHeader from './NavHeader';
 import { Layout, Tabs, Card, Row, Col } from 'antd';
 import s1 from '../images/s1.jpeg';
-import 'antd/dist/antd.css';
 import Footer from './ContactFooter';
 import Slider from './Slider';
 import '../App.scss';

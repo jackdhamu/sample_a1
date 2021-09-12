@@ -2,7 +2,6 @@ import React from 'react';
 import { Carousel, } from 'antd';
 import baner1 from '../images/b1.jpg';
 import baner4 from '../images/b3.jpg';
-import 'antd/dist/antd.css';
 
 const contentStyle = {
   height: '300px',
