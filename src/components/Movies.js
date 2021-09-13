@@ -17,7 +17,7 @@ const { Meta } = Card;
 const { Sider, Content } = Layout;
 
 const Demo = () => (
-  <Tabs style={{ textAlign: 'center' }} defaultActiveKey="1" onChange={callback} centered>
+  <Tabs type='card' style={{ textAlign: 'center' }} defaultActiveKey="1" onChange={callback} centered>
     <TabPane tab="NOW SHOWING" key="1">
       <br />
       <Card

@@ -140,3 +140,11 @@ body {
 .info .total {
   color: #7bc47f;
 }
+.iconn{
+  font-size: 100px;
+  color: white;
+  font-weight: 100;
+}
+.iconn:hover{
+  color: coral;
+}

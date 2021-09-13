@@ -77,6 +77,11 @@ const routes = [
     component: lazy(() => import('components/SeatBooking')),
     exact: true,
   },
+  {
+    path: 'theatrea',
+    component: lazy(() => import('components/TheatreDrawer')),
+    exact: true,
+  }, 
 ];
 
 export default routes;

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, Layout, Space } from 'antd';
-import { LogoutOutlined, UserOutlined } from '@ant-design/icons';
+import { Button,Layout, Space } from 'antd';
+import { CompassOutlined, LogoutOutlined, UserOutlined } from '@ant-design/icons';
 import { NavLink } from 'react-router-dom';
 import actions from 'redux/Authenticate/actions';
 import { connect } from 'react-redux';
@@ -17,7 +17,6 @@ class NavHeader extends React.Component {
   };
 
   render() {
-    const { title } = this.props;
     return (
       <Header>
         <div className="header-title" style={{ textAlign: 'center' }}>
@@ -27,6 +26,9 @@ class NavHeader extends React.Component {
             <div>
               <NavLink to={'/login'}>
                 <Button type="primary" icon={<LogoutOutlined />} danger onClick={this.logOut} />
+              </NavLink>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <NavLink style={{fontSize:'20px'}} className="Navlink" to={'/landingpage'} className="Navlink">
+               [ Location &nbsp; <CompassOutlined /> ]
               </NavLink>
               <NavLink className="Navlink" to={'/landingpage'} className="Navlink">
                 HOME
