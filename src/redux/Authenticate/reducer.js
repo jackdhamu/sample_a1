@@ -3,7 +3,7 @@ import actions from 'redux/Authenticate/actions';
 import { message } from 'antd';
 
 const initialState = {
-  isAuthenticated: true,
+  isAuthenticated: false,
   loader: false,
   cookies: undefined,
 };
