@@ -1,6 +1,6 @@
 import actions from 'redux/SignUp/actions';
-import { setLocalData } from 'Config/helpers';
-import { message } from 'antd';
+//import { setLocalData } from 'Config/helpers';
+//import { message } from 'antd';
 
 const initialState = {
   SignupPageLoader: false, 

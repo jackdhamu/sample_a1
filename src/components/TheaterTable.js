@@ -3,7 +3,7 @@ import { Button, Space, Table, Popconfirm, Badge, Switch } from 'antd';
 import actions from 'redux/Theaters/actions';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import SetAccountDrawer from './SetAccountDrawer';
+//import SetAccountDrawer from './SetAccountDrawer';
 //import Account from './Account';
 
 const tableWidth = '100%';

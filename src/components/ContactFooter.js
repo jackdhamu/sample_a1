@@ -1,6 +1,8 @@
 import React from 'react';
 import { CustomerServiceOutlined, SolutionOutlined, AliwangwangOutlined, DesktopOutlined, InfoCircleOutlined } from '@ant-design/icons';
 import { Col, Row } from 'antd';
+import '../App.css';
+
 
 function Footer() {
 
@@ -9,29 +11,51 @@ function Footer() {
          <div style={{ backgroundColor: '#001529', textAlign: 'center' }} >
             <br /><br />
             <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-               <Col className="gutter-row" offset={1} span={5}>
-                  <CustomerServiceOutlined className="footericon1" style={{ fontSize: '100px', color: 'white' }} /><br /><br />
-                  <a href="/contact" className="footericon1">CUSTOMER CARE</a>      </Col>
-               <Col className="gutter-row" span={4} >
-                  <SolutionOutlined style={{ fontSize: '100px', color: 'white' }} /> <br /><br />
-                  <a href="/faq" className="footericon1" >FAQ</a>      </Col>
-               <Col className="gutter-row" span={4}>
-                  <InfoCircleOutlined style={{ fontSize: '100px', color: 'white' }} />
-                  <br /><br />
-                  <a href="/contact" className="footericon1">ABOUT US</a>      </Col>
-               <Col className="gutter-row" span={4}>
-                  <AliwangwangOutlined style={{ fontSize: '100px', color: 'white' }} />
-                  <br /><br />
-                  <a href="/feedback" className="footericon1" >FEEDBACK</a>      </Col>
-               <Col className="gutter-row" >
-                  <DesktopOutlined style={{ fontSize: '100px', color: 'white' }} />
-                  <br /><br />
-                  <a href="/landingpage" className="footericon1" span={4}>BOX OFFICE</a>      </Col>
+               <Col className="iconn" offset={2} span={4}>
+               <Row>
+               <CustomerServiceOutlined style={{ marginLeft:'25px'}}/>
+                 </Row>
+                 <Row>
+                 <a href="/contact" className="footericon1">CUSTOMER CARE</a>
+                 </Row>
+               </Col>
+                  <Col className="iconn" span={4} >
+               <Row>
+                  <SolutionOutlined/>
+                 </Row>
+                 <Row>
+                 <a href="/faq" className="footericon1" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAQ</a>
+                 </Row>
+                 </Col>
+               <Col className="iconn" span={4}>
+               <Row>
+                  <InfoCircleOutlined/>
+                 </Row>
+                 <Row>
+                 <a href="/contact" className="footericon1">ABOUT US</a> 
+                 </Row>
+                 </Col>
+               <Col className="iconn" span={4}>
+               <Row>
+                  <AliwangwangOutlined/>
+                 </Row>
+                 <Row>
+                 <a href="/feedback" className="footericon1" >FEEDBACK</a>  
+                  </Row>
+                  </Col>
+               <Col className="iconn"span={4} >
+                  <Row>
+                  <DesktopOutlined/>
+                 </Row>
+                 <Row>
+                 <a href="/landingpage"className="footericon1">BOX OFFICE</a>   
+                  </Row>
+                  </Col>
             </Row>
-            <br /><br />
+            <br /><br /><br/>
+            <p style={{ textAlign: 'center' , color:'white'}}>All rights received ©2021 Created by TicketEzy Dev Team</p>
+            
          </div>
-         <br />
-         <p style={{ textAlign: 'center' }}>All rights received ©2021 Created by TicketEzy Dev Team</p>
       </div>
    );
 }

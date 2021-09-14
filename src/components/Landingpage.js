@@ -12,8 +12,9 @@ const { TabPane } = Tabs;
 function callback(key) {
   console.log(key);
 }
+
 const Demo = () => (
-  <Tabs style={{ textAlign: 'center' }} defaultActiveKey="1" onChange={callback} centered>
+  <Tabs type="card" style={{ textAlign: 'center' }} defaultActiveKey="1" onChange={callback} centered>
     <TabPane tab="NOW SHOWING" key="1">
       <br />
       <Card
@@ -59,7 +60,7 @@ function Landingpage() {
     <div>
       <NavHeader />
       <Slider />
-      <Content className="site-layout" style={{ padding: '0 50px', marginTop: 30, alignContent: 'center', textAlign: 'center', alignItems: 'center', justifyContent: 'center' }}>
+      <Content className="site-layout" style={{ padding: '0 100px', marginTop: 30, alignContent: 'center', textAlign: 'center', alignItems: 'center', justifyContent: 'center' }}>
         <div className="site-layout-background" style={{ padding: 24, }}>
           <h2 style={{ textAlign: 'center', textDecoration: 'underline', textDecorationColor: 'coral', textDecorationThickness: '2.5px', }}>M&nbsp;O&nbsp;V&nbsp;I&nbsp;E&nbsp;S</h2>
           <br />

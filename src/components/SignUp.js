@@ -10,7 +10,6 @@ class Signup extends React.Component {
   formRef = React.createRef();
 
   onSubmit = () => {
-    const { userData } = this.props;
     this.formRef.current
       .validateFields()
       .then((values) => {
@@ -124,7 +123,6 @@ class Signup extends React.Component {
             </Form.Item>
           </Form>
         </Content>
-        <br />
         <Footerr />
       </div>
     );
